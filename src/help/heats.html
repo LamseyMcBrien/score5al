@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC 
+    "-//W3C//DTD HTML 4.01 Transitional//EN" 
+    "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            body {
+                background-color:   #f5f9fd;
+                color:              #000011;
+                font-family:        Arial, Helvetica, sans-serif;
+                font-size:          10px;
+                margin:             0px;
+                padding:            0px;
+                line-height:        125%;
+            }
+            #content {
+                padding:            5px;
+            }
+            #menu {
+                background-color:   #e5e9ed;
+                padding:            5px;
+            }
+            p {
+                text-align:         justify;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div id="menu">
+            <a href="start.html">Contents</a>
+            | <a href="intro.html">Intro</a>
+            | <a href="controls.html">Controls</a>:
+              <a href="match.html">Match</a>,
+              <a href="teams.html">Teams</a>,
+              <a href="heats.html">Heats</a>,
+              <a href="jams.html">Jams</a>
+            | <a href="scoreboard.html">Scoreboard</a>
+            | <a href="faq.html">FAQ</a>
+        </div>
+        <div id="content">
+        
+            <h2>Heats Tab</h2>
+			<p>
+				The main window's Heats tab is used to set up the match schedule
+                by assigning teams to the jams in each heat. You can either set
+                up the schedule manually, or Score5al can do it for you 
+                automatically.
+			</p>
+            <p align="center">
+                <img src="heats.jpg" /><br />
+                <i>Score5al's heat-editing tab</i>
+            </p>
+      
+            <p><b>Manual assignment</b></p>
+            <p>
+                If you want to set up your match schedule manually, simply 
+                select the heat you want to edit using the controls at the top
+                of the Heats panel, and then assign the teams in each jam by 
+                clicking the team names in the table. Once you have finished,
+                you should click the "Commit changes" button to save your 
+                changes; note that selecting another heat will discard any 
+                uncommitted changes.
+            </p>
+            
+            <a name="autoassign"></a>
+            <p><b>Automatic assignment</b></p>
+            <p>
+                To automatically generate a match schedule, use the
+                controls at the bottom of the Heats panel to select the maximum 
+                number of teams in a heat, and then press the "auto-assign" 
+                button. This will regenerate the entire match schedule - i.e.
+                the teams will be reassigned in all jams in all heats.
+            </p>
+            <p>
+                The auto-assignment function attempts to generate a perfect 
+                distribution where all teams play each other an
+                equal number of times, whilst also spacing teams out as evenly
+                as possible (so one team doesn't play too many jams at once).
+                Depending on your match configuration, this may or may not be 
+                possible; Score5al will keep trying for up to 60 seconds to 
+                create a perfect distribution before giving up. It may take 
+                several attempts before a perfect distribution is found. In 
+                general, the lower the number of teams per heat, the harder it
+                is to generate a perfect distribution.
+            </p>
+            
+            <a name="distribution"></a>
+            <p><b>Team Distribution</b></p>
+            <p>
+                As described above, an ideal Sur5al match schedule should ensure
+                that all teams play each other the same number of times, and 
+                that each team's jams are spread as evenly as possible 
+                throughout the match. To help visualise this, you can show a 
+                distribution table by selecting the "Show Distribution" option
+                from the "Match" menu.
+            </p>
+            <p align="center">
+                <img src="distribution.jpg" /><br />
+                <i>Score5al's team distribution dialogue</i>
+            </p>
+            <p>
+                The numbers in the table represent the total number of jams 
+                played by each team at the end of each heat. A number is only 
+                displayed if a team participates in a heat. This allows you to 
+                visualise the gaps in each team's involvement in the heat 
+                schedule, as well as the number of jams they have played at any 
+                given stage relative to the other teams. Ideally, each 
+                team's involvement in the match should be spread out as evenly
+                as possible from start to finish.
+            </p>
+            
+		</div>
+	</body>
+</html>

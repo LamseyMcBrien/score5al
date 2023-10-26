@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC 
+    "-//W3C//DTD HTML 4.01 Transitional//EN" 
+    "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            body {
+                background-color:   #f5f9fd;
+                color:              #000011;
+                font-family:        Arial, Helvetica, sans-serif;
+                font-size:          10px;
+                margin:             0px;
+                padding:            0px;
+                line-height:        125%;
+            }
+            #content {
+                padding:            5px;
+            }
+            #menu {
+                background-color:   #e5e9ed;
+                padding:            5px;
+            }
+            p {
+                text-align:         justify;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div id="menu">
+            <a href="start.html">Contents</a>
+            | <a href="intro.html">Intro</a>
+            | <a href="controls.html">Controls</a>:
+              <a href="match.html">Match</a>,
+              <a href="teams.html">Teams</a>,
+              <a href="heats.html">Heats</a>,
+              <a href="jams.html">Jams</a>
+            | <a href="scoreboard.html">Scoreboard</a>
+            | <a href="faq.html">FAQ</a>
+        </div>
+        <div id="content">
+        
+            <h2>Match Controls</h2>
+			<p>
+				This section of the user manual contains instructions on using
+                Score5al's main window to set up your match and teams, create
+                the jam schedule, and update jam scores. 
+			</p>
+      
+            <p><b>Main Window Layout</b></p>
+            <p>
+                Like most desktop programs, Score5al has a menu bar which 
+                contains various functions such as saving/loading matches, 
+                viewing this help manual, and so on. There is also a toolbar 
+                with quick-access buttons for common functions, as well as a 
+                status bar at the bottom of the window which displays 
+                context-sensitive help.
+            </p>
+            <p align="center">
+                <img src="mainwindow.jpg" /><br />
+                <i>Score5al's main window</i>
+            </p>
+            <p>
+                Score5al's match-editing controls are contained in four tabs, 
+                one each for Match, Teams, Heats, and Jams. See below for more
+                details on each of these tabs.
+            </p>
+            
+            
+            <p><b>Match-Editing Tabs</b></p>
+            <p>
+                Score5al's match-editing controls are separated into tabs, each
+                of which allows you to manage one aspect of the match. Each tab
+                is described briefly below; click the headings for complete 
+                details.
+            </p>
+            <p><i><a href="match.html">Match</a></i></p>
+            <p>
+                The Match tab is used to set the match's overall parameters - 
+                the match name, the numbers of teams, heats and jams, and the
+                jam duration.
+            </p>
+            <p><i><a href="teams.html">Teams</a></i></p>
+            <p>
+                After selecting the desired number of teams, the Teams tab can
+                be used to edit each team's details, including their name and
+                colours.
+            </p>
+            <p><i><a href="heats.html">Heats</a></i></p>
+            <p>
+                The Heats tab is used to assign teams to the jams in each heat,
+                thereby creating a match schedule.
+            </p>
+            <p><i><a href="jams.html">Jams</a></i></p>
+            <p>
+                On match day, the Jams tab is used to control the jam timer and
+                update the scores for the jam in progress. The Jams tab also
+                controls which jam or heat is being displayed in the scoreboard 
+                window. 
+            </p>
+            
+            <a name="menus"></a>
+            <p><b>Menu Functions</b></p>
+            <p>
+                Score5al has three menus, each with various options; many of 
+                the menu functions should be self-explanatory if you are 
+                familiar with modern desktop applications. Read on for more
+                information.
+            </p>
+            <p><i>Match menu</i></p>
+            <ul>
+                <li>
+                    <b>New, Load, Save, Save As</b> - these functions, which also
+                    appear on the toolbar, allow you to perform normal load/save
+                    operations with your match data. Match data is saved in a
+                    special CSV-based format which is internal to Score5al; if
+                    desired, these files can be hand-edited so long as the 
+                    structure is not altered. Score5al save files have a 
+                    <i>.s5l</i> filename extension.
+                </li>
+                <li>
+                    <b>Show distribution</b> - displays a dialog box which 
+                    visualises the distribution of each team's jams throughout
+                    the match schedule. See 
+                    <a href="heats.html#distribution">Team Distribution</a> 
+                    for more information.
+                </li>
+                <li>
+                    <b>Export as CSV</b> - this function exports all match data
+                    in a human-readable form to a CSV (Comma-Separated Values)
+                    file which can be imported into a spreadsheet package such
+                    as Microsoft Excel or OpenOffice. The field delimiter is a 
+                    comma and the quote delimiter is the double-quote character.
+                </li>
+                <li>
+                    <b>Export options</b> - this submenu allows you to choose
+                    the format to use for team names in exported CSV files. For
+                    example, you might want to use team numbers only to create
+                    a compact schedule table, or you might want to use team 
+                    names in a post-match results report.
+                </li>
+                <li>
+                    <b>Exit</b> - this closes the application. If there are
+                    unsaved changes, you will be prompted to save or discard 
+                    them.
+                </li>
+            </ul>
+            <p><i>Scoreboard menu</i></p>
+            <ul>
+                <li>
+                    <b>Jam / Schedule / Table mode</b> - these functions switch
+                    the current scoreboard mode and also appear on the toolbar.
+                    See the <a href="scoreboard.html">Scoreboard</a> section for
+                    more details on scoreboard modes.
+                </li>
+                <li>
+                    <b>Enter / exit full screen</b> - toggles the full-screen
+                    status of the scoreboard. Pressing the ESC character quits
+                    full-screen mode. 
+                </li>
+            </ul>
+            <p><i>Help menu</i></p>
+            <ul>
+                <li>
+                    <b>Help</b> - if you're reading this text, it's fairly 
+                    likely that you already know what this menu item does; it 
+                    opens the online help manual which you are currently reading.
+                </li>
+                <li>
+                    <b>About</b> - displays version and copyright information
+                    for Score5al, Sur5al, and any third-party components used 
+                    by this software. 
+                </li>
+            </ul>
+            
+		</div>
+	</body>
+</html>
